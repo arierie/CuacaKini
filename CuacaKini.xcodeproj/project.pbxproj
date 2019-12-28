@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000F907223B1F5DA00FFB5CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F907123B1F5DA00FFB5CE /* AppDelegate.swift */; };
+		000F907423B1F5DA00FFB5CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F907323B1F5DA00FFB5CE /* SceneDelegate.swift */; };
+		000F907823B1F5DB00FFB5CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000F907723B1F5DB00FFB5CE /* Assets.xcassets */; };
+		000F907E23B1F5DB00FFB5CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000F907C23B1F5DB00FFB5CE /* LaunchScreen.storyboard */; };
+		000F908923B1F5DB00FFB5CE /* CuacaKiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F908823B1F5DB00FFB5CE /* CuacaKiniTests.swift */; };
+		000F909523B1F6AC00FFB5CE /* WeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F909423B1F6AC00FFB5CE /* WeatherFetcher.swift */; };
+		000F909823B21DB100FFB5CE /* WeatherResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F909723B21DB100FFB5CE /* WeatherResponses.swift */; };
+		000F909A23B21E1100FFB5CE /* WeatherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F909923B21E1100FFB5CE /* WeatherError.swift */; };
+		000F909E23B21EC000FFB5CE /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F909D23B21EC000FFB5CE /* DataExtensions.swift */; };
+		000F90A023B21F4700FFB5CE /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F909F23B21F4700FFB5CE /* DateUtil.swift */; };
+		000F90AE23B2218A00FFB5CE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F90AD23B2218A00FFB5CE /* MapView.swift */; };
+		000F90B123B2249C00FFB5CE /* WeeklyWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F90B023B2249C00FFB5CE /* WeeklyWeatherView.swift */; };
+		000F90B323B224D200FFB5CE /* WeeklyWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F90B223B224D200FFB5CE /* WeeklyWeatherViewModel.swift */; };
+		000F90B723B2264600FFB5CE /* DailyWeatherRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F90B623B2264600FFB5CE /* DailyWeatherRowView.swift */; };
+		000F90B923B2265F00FFB5CE /* DailyWeatherRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F90B823B2265F00FFB5CE /* DailyWeatherRowViewModel.swift */; };
+		784007BBAF0120A9CA52963F /* Pods_CuacaKini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08D1650F2CEAEB6E04E7F19 /* Pods_CuacaKini.framework */; };
+		D034E2C723B70594001CCB65 /* CuacaKiniConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034E2C623B70594001CCB65 /* CuacaKiniConstants.swift */; };
+		D0C6D4C223B5E83900BF1498 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6D4C123B5E83900BF1498 /* ViewExtensions.swift */; };
+		D0C6D4C523B609A500BF1498 /* TodayWeatherRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6D4C423B609A500BF1498 /* TodayWeatherRowViewModel.swift */; };
+		D0C6D4C723B60FC700BF1498 /* TodayWeatherRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6D4C623B60FC700BF1498 /* TodayWeatherRowView.swift */; };
+		D0C6D4D323B6229E00BF1498 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6D4D223B6229E00BF1498 /* RemoteImageView.swift */; };
+		D0C6D4D523B622C200BF1498 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6D4D423B622C200BF1498 /* ImageLoader.swift */; };
+		DB6789CEA98FD713FCA6D447 /* Pods_CuacaKiniTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C63E754AD7297A787ECBE99 /* Pods_CuacaKiniTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000F908523B1F5DB00FFB5CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000F906623B1F5DA00FFB5CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000F906D23B1F5DA00FFB5CE;
+			remoteInfo = CuacaKini;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000F906E23B1F5DA00FFB5CE /* CuacaKini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuacaKini.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000F907123B1F5DA00FFB5CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		000F907323B1F5DA00FFB5CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		000F907723B1F5DB00FFB5CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000F907D23B1F5DB00FFB5CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		000F907F23B1F5DB00FFB5CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000F908423B1F5DB00FFB5CE /* CuacaKiniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuacaKiniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		000F908823B1F5DB00FFB5CE /* CuacaKiniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuacaKiniTests.swift; sourceTree = "<group>"; };
+		000F908A23B1F5DB00FFB5CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000F909423B1F6AC00FFB5CE /* WeatherFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFetcher.swift; sourceTree = "<group>"; };
+		000F909723B21DB100FFB5CE /* WeatherResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponses.swift; sourceTree = "<group>"; };
+		000F909923B21E1100FFB5CE /* WeatherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherError.swift; sourceTree = "<group>"; };
+		000F909D23B21EC000FFB5CE /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		000F909F23B21F4700FFB5CE /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		000F90AD23B2218A00FFB5CE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		000F90B023B2249C00FFB5CE /* WeeklyWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeatherView.swift; sourceTree = "<group>"; };
+		000F90B223B224D200FFB5CE /* WeeklyWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeatherViewModel.swift; sourceTree = "<group>"; };
+		000F90B623B2264600FFB5CE /* DailyWeatherRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherRowView.swift; sourceTree = "<group>"; };
+		000F90B823B2265F00FFB5CE /* DailyWeatherRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherRowViewModel.swift; sourceTree = "<group>"; };
+		1450D799E0E19D6C919E80BD /* Pods-CuacaKiniTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuacaKiniTests.release.xcconfig"; path = "Target Support Files/Pods-CuacaKiniTests/Pods-CuacaKiniTests.release.xcconfig"; sourceTree = "<group>"; };
+		3571AED9159B3BF11783B8FF /* Pods-CuacaKini.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuacaKini.debug.xcconfig"; path = "Target Support Files/Pods-CuacaKini/Pods-CuacaKini.debug.xcconfig"; sourceTree = "<group>"; };
+		3A74CAF2ADF37002CD379B0A /* Pods-CuacaKini.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuacaKini.release.xcconfig"; path = "Target Support Files/Pods-CuacaKini/Pods-CuacaKini.release.xcconfig"; sourceTree = "<group>"; };
+		64FB1E6930CC429D85F5FA4F /* Pods-CuacaKiniTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuacaKiniTests.debug.xcconfig"; path = "Target Support Files/Pods-CuacaKiniTests/Pods-CuacaKiniTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C63E754AD7297A787ECBE99 /* Pods_CuacaKiniTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuacaKiniTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08D1650F2CEAEB6E04E7F19 /* Pods_CuacaKini.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuacaKini.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D034E2C623B70594001CCB65 /* CuacaKiniConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuacaKiniConstants.swift; sourceTree = "<group>"; };
+		D0C6D4C123B5E83900BF1498 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		D0C6D4C423B609A500BF1498 /* TodayWeatherRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherRowViewModel.swift; sourceTree = "<group>"; };
+		D0C6D4C623B60FC700BF1498 /* TodayWeatherRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherRowView.swift; sourceTree = "<group>"; };
+		D0C6D4D223B6229E00BF1498 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		D0C6D4D423B622C200BF1498 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000F906B23B1F5DA00FFB5CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784007BBAF0120A9CA52963F /* Pods_CuacaKini.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000F908123B1F5DB00FFB5CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6789CEA98FD713FCA6D447 /* Pods_CuacaKiniTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000F906523B1F5DA00FFB5CE = {
+			isa = PBXGroup;
+			children = (
+				000F907023B1F5DA00FFB5CE /* CuacaKini */,
+				000F908723B1F5DB00FFB5CE /* CuacaKiniTests */,
+				000F906F23B1F5DA00FFB5CE /* Products */,
+				591EA1F406883A5849796150 /* Pods */,
+				DD966946E3F9F4BE13B6DC04 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		000F906F23B1F5DA00FFB5CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000F906E23B1F5DA00FFB5CE /* CuacaKini.app */,
+				000F908423B1F5DB00FFB5CE /* CuacaKiniTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000F907023B1F5DA00FFB5CE /* CuacaKini */ = {
+			isa = PBXGroup;
+			children = (
+				D0C6D4D623B6588800BF1498 /* Custom View */,
+				000F90A323B2201A00FFB5CE /* Weather */,
+				000F90A123B21F8D00FFB5CE /* Supporting Files */,
+				000F909B23B21E9600FFB5CE /* Utility */,
+				000F909623B21C4D00FFB5CE /* Data */,
+			);
+			path = CuacaKini;
+			sourceTree = "<group>";
+		};
+		000F908723B1F5DB00FFB5CE /* CuacaKiniTests */ = {
+			isa = PBXGroup;
+			children = (
+				000F908823B1F5DB00FFB5CE /* CuacaKiniTests.swift */,
+				000F908A23B1F5DB00FFB5CE /* Info.plist */,
+			);
+			path = CuacaKiniTests;
+			sourceTree = "<group>";
+		};
+		000F909623B21C4D00FFB5CE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				000F909423B1F6AC00FFB5CE /* WeatherFetcher.swift */,
+				000F909723B21DB100FFB5CE /* WeatherResponses.swift */,
+				000F909923B21E1100FFB5CE /* WeatherError.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		000F909B23B21E9600FFB5CE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D034E2C623B70594001CCB65 /* CuacaKiniConstants.swift */,
+				000F909D23B21EC000FFB5CE /* DataExtensions.swift */,
+				000F909F23B21F4700FFB5CE /* DateUtil.swift */,
+				D0C6D4C123B5E83900BF1498 /* ViewExtensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		000F90A123B21F8D00FFB5CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				000F907123B1F5DA00FFB5CE /* AppDelegate.swift */,
+				000F907323B1F5DA00FFB5CE /* SceneDelegate.swift */,
+				000F907723B1F5DB00FFB5CE /* Assets.xcassets */,
+				000F907C23B1F5DB00FFB5CE /* LaunchScreen.storyboard */,
+				000F907F23B1F5DB00FFB5CE /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		000F90A323B2201A00FFB5CE /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				D0C6D4C323B6099600BF1498 /* Today */,
+				000F90BA23B2269800FFB5CE /* Daily */,
+				000F90AF23B2241200FFB5CE /* Weekly */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		000F90AF23B2241200FFB5CE /* Weekly */ = {
+			isa = PBXGroup;
+			children = (
+				000F90B023B2249C00FFB5CE /* WeeklyWeatherView.swift */,
+				000F90B223B224D200FFB5CE /* WeeklyWeatherViewModel.swift */,
+			);
+			path = Weekly;
+			sourceTree = "<group>";
+		};
+		000F90BA23B2269800FFB5CE /* Daily */ = {
+			isa = PBXGroup;
+			children = (
+				000F90B623B2264600FFB5CE /* DailyWeatherRowView.swift */,
+				000F90B823B2265F00FFB5CE /* DailyWeatherRowViewModel.swift */,
+			);
+			path = Daily;
+			sourceTree = "<group>";
+		};
+		591EA1F406883A5849796150 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3571AED9159B3BF11783B8FF /* Pods-CuacaKini.debug.xcconfig */,
+				3A74CAF2ADF37002CD379B0A /* Pods-CuacaKini.release.xcconfig */,
+				64FB1E6930CC429D85F5FA4F /* Pods-CuacaKiniTests.debug.xcconfig */,
+				1450D799E0E19D6C919E80BD /* Pods-CuacaKiniTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0C6D4C323B6099600BF1498 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				D0C6D4C423B609A500BF1498 /* TodayWeatherRowViewModel.swift */,
+				D0C6D4C623B60FC700BF1498 /* TodayWeatherRowView.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		D0C6D4D623B6588800BF1498 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				D0C6D4D823B6597300BF1498 /* Map View */,
+				D0C6D4D723B658C100BF1498 /* Remote Image View */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		D0C6D4D723B658C100BF1498 /* Remote Image View */ = {
+			isa = PBXGroup;
+			children = (
+				D0C6D4D223B6229E00BF1498 /* RemoteImageView.swift */,
+				D0C6D4D423B622C200BF1498 /* ImageLoader.swift */,
+			);
+			path = "Remote Image View";
+			sourceTree = "<group>";
+		};
+		D0C6D4D823B6597300BF1498 /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				000F90AD23B2218A00FFB5CE /* MapView.swift */,
+			);
+			path = "Map View";
+			sourceTree = "<group>";
+		};
+		DD966946E3F9F4BE13B6DC04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B08D1650F2CEAEB6E04E7F19 /* Pods_CuacaKini.framework */,
+				6C63E754AD7297A787ECBE99 /* Pods_CuacaKiniTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000F906D23B1F5DA00FFB5CE /* CuacaKini */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000F908D23B1F5DB00FFB5CE /* Build configuration list for PBXNativeTarget "CuacaKini" */;
+			buildPhases = (
+				E747450339C844C2472293C5 /* [CP] Check Pods Manifest.lock */,
+				000F906A23B1F5DA00FFB5CE /* Sources */,
+				000F906B23B1F5DA00FFB5CE /* Frameworks */,
+				000F906C23B1F5DA00FFB5CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CuacaKini;
+			productName = CuacaKini;
+			productReference = 000F906E23B1F5DA00FFB5CE /* CuacaKini.app */;
+			productType = "com.apple.product-type.application";
+		};
+		000F908323B1F5DB00FFB5CE /* CuacaKiniTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000F909023B1F5DB00FFB5CE /* Build configuration list for PBXNativeTarget "CuacaKiniTests" */;
+			buildPhases = (
+				CBE5FD3F0B09B8D1C0A4A0A4 /* [CP] Check Pods Manifest.lock */,
+				000F908023B1F5DB00FFB5CE /* Sources */,
+				000F908123B1F5DB00FFB5CE /* Frameworks */,
+				000F908223B1F5DB00FFB5CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000F908623B1F5DB00FFB5CE /* PBXTargetDependency */,
+			);
+			name = CuacaKiniTests;
+			productName = CuacaKiniTests;
+			productReference = 000F908423B1F5DB00FFB5CE /* CuacaKiniTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000F906623B1F5DA00FFB5CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Arie;
+				TargetAttributes = {
+					000F906D23B1F5DA00FFB5CE = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					000F908323B1F5DB00FFB5CE = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 000F906D23B1F5DA00FFB5CE;
+					};
+				};
+			};
+			buildConfigurationList = 000F906923B1F5DA00FFB5CE /* Build configuration list for PBXProject "CuacaKini" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000F906523B1F5DA00FFB5CE;
+			productRefGroup = 000F906F23B1F5DA00FFB5CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000F906D23B1F5DA00FFB5CE /* CuacaKini */,
+				000F908323B1F5DB00FFB5CE /* CuacaKiniTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000F906C23B1F5DA00FFB5CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000F907E23B1F5DB00FFB5CE /* LaunchScreen.storyboard in Resources */,
+				000F907823B1F5DB00FFB5CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000F908223B1F5DB00FFB5CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CBE5FD3F0B09B8D1C0A4A0A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CuacaKiniTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E747450339C844C2472293C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CuacaKini-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000F906A23B1F5DA00FFB5CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C6D4C723B60FC700BF1498 /* TodayWeatherRowView.swift in Sources */,
+				000F907223B1F5DA00FFB5CE /* AppDelegate.swift in Sources */,
+				000F909A23B21E1100FFB5CE /* WeatherError.swift in Sources */,
+				000F909E23B21EC000FFB5CE /* DataExtensions.swift in Sources */,
+				D0C6D4C223B5E83900BF1498 /* ViewExtensions.swift in Sources */,
+				000F907423B1F5DA00FFB5CE /* SceneDelegate.swift in Sources */,
+				000F90AE23B2218A00FFB5CE /* MapView.swift in Sources */,
+				000F90B923B2265F00FFB5CE /* DailyWeatherRowViewModel.swift in Sources */,
+				000F90B123B2249C00FFB5CE /* WeeklyWeatherView.swift in Sources */,
+				D0C6D4D323B6229E00BF1498 /* RemoteImageView.swift in Sources */,
+				000F90B723B2264600FFB5CE /* DailyWeatherRowView.swift in Sources */,
+				000F909823B21DB100FFB5CE /* WeatherResponses.swift in Sources */,
+				D0C6D4D523B622C200BF1498 /* ImageLoader.swift in Sources */,
+				D0C6D4C523B609A500BF1498 /* TodayWeatherRowViewModel.swift in Sources */,
+				000F90B323B224D200FFB5CE /* WeeklyWeatherViewModel.swift in Sources */,
+				000F90A023B21F4700FFB5CE /* DateUtil.swift in Sources */,
+				000F909523B1F6AC00FFB5CE /* WeatherFetcher.swift in Sources */,
+				D034E2C723B70594001CCB65 /* CuacaKiniConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000F908023B1F5DB00FFB5CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000F908923B1F5DB00FFB5CE /* CuacaKiniTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000F908623B1F5DB00FFB5CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000F906D23B1F5DA00FFB5CE /* CuacaKini */;
+			targetProxy = 000F908523B1F5DB00FFB5CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		000F907C23B1F5DB00FFB5CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000F907D23B1F5DB00FFB5CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		000F908B23B1F5DB00FFB5CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000F908C23B1F5DB00FFB5CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000F908E23B1F5DB00FFB5CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3571AED9159B3BF11783B8FF /* Pods-CuacaKini.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "CuacaKini/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arieridwan.id.CuacaKini;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000F908F23B1F5DB00FFB5CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A74CAF2ADF37002CD379B0A /* Pods-CuacaKini.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "CuacaKini/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arieridwan.id.CuacaKini;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		000F909123B1F5DB00FFB5CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64FB1E6930CC429D85F5FA4F /* Pods-CuacaKiniTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CuacaKiniTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arieridwan.id.CuacaKiniTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuacaKini.app/CuacaKini";
+			};
+			name = Debug;
+		};
+		000F909223B1F5DB00FFB5CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1450D799E0E19D6C919E80BD /* Pods-CuacaKiniTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CuacaKiniTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arieridwan.id.CuacaKiniTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuacaKini.app/CuacaKini";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000F906923B1F5DA00FFB5CE /* Build configuration list for PBXProject "CuacaKini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000F908B23B1F5DB00FFB5CE /* Debug */,
+				000F908C23B1F5DB00FFB5CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000F908D23B1F5DB00FFB5CE /* Build configuration list for PBXNativeTarget "CuacaKini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000F908E23B1F5DB00FFB5CE /* Debug */,
+				000F908F23B1F5DB00FFB5CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000F909023B1F5DB00FFB5CE /* Build configuration list for PBXNativeTarget "CuacaKiniTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000F909123B1F5DB00FFB5CE /* Debug */,
+				000F909223B1F5DB00FFB5CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000F906623B1F5DA00FFB5CE /* Project object */;
+}

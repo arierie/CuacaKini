@@ -1,0 +1,6 @@
+framework module Pods_CuacaKini {
+  umbrella header "Pods-CuacaKini-umbrella.h"
+
+  export *
+  module * { export * }
+}
