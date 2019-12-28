@@ -69,6 +69,7 @@
 		6C63E754AD7297A787ECBE99 /* Pods_CuacaKiniTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuacaKiniTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08D1650F2CEAEB6E04E7F19 /* Pods_CuacaKini.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuacaKini.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D034E2C623B70594001CCB65 /* CuacaKiniConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuacaKiniConstants.swift; sourceTree = "<group>"; };
+		D034E2C823B70794001CCB65 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D0C6D4C123B5E83900BF1498 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		D0C6D4C423B609A500BF1498 /* TodayWeatherRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherRowViewModel.swift; sourceTree = "<group>"; };
 		D0C6D4C623B60FC700BF1498 /* TodayWeatherRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherRowView.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		000F906523B1F5DA00FFB5CE = {
 			isa = PBXGroup;
 			children = (
+				D034E2C823B70794001CCB65 /* README.md */,
 				000F907023B1F5DA00FFB5CE /* CuacaKini */,
 				000F908723B1F5DB00FFB5CE /* CuacaKiniTests */,
 				000F906F23B1F5DA00FFB5CE /* Products */,
